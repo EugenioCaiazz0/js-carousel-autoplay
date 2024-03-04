@@ -25,4 +25,11 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  console.log(slideIndex);
 }
+
+const autoSlider = setInterval(()=>{
+   slideIndex += 1;
+   showSlides();
+   console.log("Cambio slide");
+  },3000)
