@@ -30,6 +30,7 @@ function showSlides(n) {
 
 const autoSlider = setInterval(()=>{
    slideIndex += 1;
+   console.log(slideIndex);
    showSlides();
    console.log("Cambio slide");
   },3000)
