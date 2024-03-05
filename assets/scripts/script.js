@@ -34,3 +34,7 @@ const autoSlider = setInterval(()=>{
    showSlides();
    console.log("Cambio slide");
   },3000)
+
+  const slideshowContainer = document.getElementsByClassName(`slideshow-container`)
+  slideshowContainer.onmouseover = (autoSlider) => {false};
+  slideshowContainer.onmouseleave = (autoSlider) => {true};
